@@ -12,4 +12,19 @@ height = height * 0.0254
 
 bmi = round(weight / height**2, 2)
 
-print(f"Calculation complete. Your Body Mass Index (BMI) is: \n{bmi} %")
+
+
+
+
+if(bmi <= 18.5):
+    print(f"Calculation complete. Your Body Mass Index (BMI) is: \n{bmi} %")
+    print("\nYou are UNDERWEIGHT. Please consult your doctor on dietary changes necessary.")
+elif(bmi >= 18.5 and bmi <= 24.9):
+    print(f"Calculation complete. Your Body Mass Index (BMI) is: \n{bmi} %")
+    print("\nYou are considered a HEALTH WEIGHT. NICE.")
+elif(bmi >= 24.9 and bmi <= 29.9):
+    print(f"Calculation complete. Your Body Mass Index (BMI) is: \n{bmi} %")
+    print("\nYou are OVERWEIGHT. Please consult your doctor on dietary changes necessary.")
+else:
+    print(f"Calculation complete. Your Body Mass Index (BMI) is: \n{bmi} %")
+    print("\nYou are considered to be OBESE. Please consult your doctor on dietary changes necessary.")
